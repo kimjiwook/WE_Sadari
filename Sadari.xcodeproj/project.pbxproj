@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CB98BA06D626C81FD0A6644 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A17D33849BB95CE77E721D /* libPods.a */; };
+		DEBDF69E1A36ADEF00219B9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDF69D1A36ADEF00219B9D /* AppDelegate.swift */; };
+		DEBDF6A01A36ADEF00219B9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDF69F1A36ADEF00219B9D /* ViewController.swift */; };
+		DEBDF6A31A36ADEF00219B9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBDF6A11A36ADEF00219B9D /* Main.storyboard */; };
+		DEBDF6A51A36ADEF00219B9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBDF6A41A36ADEF00219B9D /* Images.xcassets */; };
+		DEBDF6A81A36ADEF00219B9D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBDF6A61A36ADEF00219B9D /* LaunchScreen.xib */; };
+		DEBDF6B41A36ADEF00219B9D /* SadariTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDF6B31A36ADEF00219B9D /* SadariTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEBDF6AE1A36ADEF00219B9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEBDF6901A36ADEE00219B9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEBDF6971A36ADEF00219B9D;
+			remoteInfo = Sadari;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		63CDB76F4C82EBD2A0A2A405 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		85B501D6C8F7A88ED6060C15 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D9A17D33849BB95CE77E721D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEBDF6981A36ADEF00219B9D /* Sadari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sadari.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEBDF69C1A36ADEF00219B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEBDF69D1A36ADEF00219B9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEBDF69F1A36ADEF00219B9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEBDF6A21A36ADEF00219B9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEBDF6A41A36ADEF00219B9D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DEBDF6A71A36ADEF00219B9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DEBDF6AD1A36ADEF00219B9D /* SadariTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadariTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEBDF6B21A36ADEF00219B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEBDF6B31A36ADEF00219B9D /* SadariTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadariTests.swift; sourceTree = "<group>"; };
+		DEBDF6BD1A36B01E00219B9D /* Sadari-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sadari-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEBDF6951A36ADEF00219B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB98BA06D626C81FD0A6644 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEBDF6AA1A36ADEF00219B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E58EF8D5366E3EB25895C74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9A17D33849BB95CE77E721D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BC1DDEDCFB10E86C5589E0D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85B501D6C8F7A88ED6060C15 /* Pods.debug.xcconfig */,
+				63CDB76F4C82EBD2A0A2A405 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DEBDF68F1A36ADEE00219B9D = {
+			isa = PBXGroup;
+			children = (
+				DEBDF69A1A36ADEF00219B9D /* Sadari */,
+				DEBDF6B01A36ADEF00219B9D /* SadariTests */,
+				DEBDF6991A36ADEF00219B9D /* Products */,
+				8BC1DDEDCFB10E86C5589E0D /* Pods */,
+				6E58EF8D5366E3EB25895C74 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DEBDF6991A36ADEF00219B9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDF6981A36ADEF00219B9D /* Sadari.app */,
+				DEBDF6AD1A36ADEF00219B9D /* SadariTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEBDF69A1A36ADEF00219B9D /* Sadari */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDF69D1A36ADEF00219B9D /* AppDelegate.swift */,
+				DEBDF69F1A36ADEF00219B9D /* ViewController.swift */,
+				DEBDF6A11A36ADEF00219B9D /* Main.storyboard */,
+				DEBDF6A61A36ADEF00219B9D /* LaunchScreen.xib */,
+				DEBDF69B1A36ADEF00219B9D /* Supporting Files */,
+			);
+			path = Sadari;
+			sourceTree = "<group>";
+		};
+		DEBDF69B1A36ADEF00219B9D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDF6A41A36ADEF00219B9D /* Images.xcassets */,
+				DEBDF6BD1A36B01E00219B9D /* Sadari-Bridging-Header.h */,
+				DEBDF69C1A36ADEF00219B9D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEBDF6B01A36ADEF00219B9D /* SadariTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDF6B31A36ADEF00219B9D /* SadariTests.swift */,
+				DEBDF6B11A36ADEF00219B9D /* Supporting Files */,
+			);
+			path = SadariTests;
+			sourceTree = "<group>";
+		};
+		DEBDF6B11A36ADEF00219B9D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEBDF6B21A36ADEF00219B9D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEBDF6971A36ADEF00219B9D /* Sadari */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEBDF6B71A36ADEF00219B9D /* Build configuration list for PBXNativeTarget "Sadari" */;
+			buildPhases = (
+				6D26BC9295C1910AABC4717A /* Check Pods Manifest.lock */,
+				DEBDF6941A36ADEF00219B9D /* Sources */,
+				DEBDF6951A36ADEF00219B9D /* Frameworks */,
+				DEBDF6961A36ADEF00219B9D /* Resources */,
+				9E6773357DE94ABD7836FA29 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sadari;
+			productName = Sadari;
+			productReference = DEBDF6981A36ADEF00219B9D /* Sadari.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEBDF6AC1A36ADEF00219B9D /* SadariTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEBDF6BA1A36ADEF00219B9D /* Build configuration list for PBXNativeTarget "SadariTests" */;
+			buildPhases = (
+				DEBDF6A91A36ADEF00219B9D /* Sources */,
+				DEBDF6AA1A36ADEF00219B9D /* Frameworks */,
+				DEBDF6AB1A36ADEF00219B9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEBDF6AF1A36ADEF00219B9D /* PBXTargetDependency */,
+			);
+			name = SadariTests;
+			productName = SadariTests;
+			productReference = DEBDF6AD1A36ADEF00219B9D /* SadariTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEBDF6901A36ADEE00219B9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = KimJiWook;
+				TargetAttributes = {
+					DEBDF6971A36ADEF00219B9D = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					DEBDF6AC1A36ADEF00219B9D = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = DEBDF6971A36ADEF00219B9D;
+					};
+				};
+			};
+			buildConfigurationList = DEBDF6931A36ADEE00219B9D /* Build configuration list for PBXProject "Sadari" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEBDF68F1A36ADEE00219B9D;
+			productRefGroup = DEBDF6991A36ADEF00219B9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEBDF6971A36ADEF00219B9D /* Sadari */,
+				DEBDF6AC1A36ADEF00219B9D /* SadariTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEBDF6961A36ADEF00219B9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEBDF6A31A36ADEF00219B9D /* Main.storyboard in Resources */,
+				DEBDF6A81A36ADEF00219B9D /* LaunchScreen.xib in Resources */,
+				DEBDF6A51A36ADEF00219B9D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEBDF6AB1A36ADEF00219B9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D26BC9295C1910AABC4717A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E6773357DE94ABD7836FA29 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEBDF6941A36ADEF00219B9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEBDF6A01A36ADEF00219B9D /* ViewController.swift in Sources */,
+				DEBDF69E1A36ADEF00219B9D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEBDF6A91A36ADEF00219B9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEBDF6B41A36ADEF00219B9D /* SadariTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEBDF6AF1A36ADEF00219B9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEBDF6971A36ADEF00219B9D /* Sadari */;
+			targetProxy = DEBDF6AE1A36ADEF00219B9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEBDF6A11A36ADEF00219B9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEBDF6A21A36ADEF00219B9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DEBDF6A61A36ADEF00219B9D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEBDF6A71A36ADEF00219B9D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEBDF6B51A36ADEF00219B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEBDF6B61A36ADEF00219B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEBDF6B81A36ADEF00219B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85B501D6C8F7A88ED6060C15 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Sadari/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sadari/Sadari-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEBDF6B91A36ADEF00219B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63CDB76F4C82EBD2A0A2A405 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Sadari/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sadari/Sadari-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		DEBDF6BB1A36ADEF00219B9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SadariTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sadari.app/Sadari";
+			};
+			name = Debug;
+		};
+		DEBDF6BC1A36ADEF00219B9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SadariTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sadari.app/Sadari";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEBDF6931A36ADEE00219B9D /* Build configuration list for PBXProject "Sadari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEBDF6B51A36ADEF00219B9D /* Debug */,
+				DEBDF6B61A36ADEF00219B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEBDF6B71A36ADEF00219B9D /* Build configuration list for PBXNativeTarget "Sadari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEBDF6B81A36ADEF00219B9D /* Debug */,
+				DEBDF6B91A36ADEF00219B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEBDF6BA1A36ADEF00219B9D /* Build configuration list for PBXNativeTarget "SadariTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEBDF6BB1A36ADEF00219B9D /* Debug */,
+				DEBDF6BC1A36ADEF00219B9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEBDF6901A36ADEE00219B9D /* Project object */;
+}
