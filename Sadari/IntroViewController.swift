@@ -127,6 +127,7 @@ class IntroViewController:IFTTTAnimatedScrollViewController, IFTTTAnimatedScroll
     }
     
     func skipAction(){
-        NSLog("Skip!!")
+        // 모달뷰 처리 필요
+        self.dismissViewControllerAnimated(true, completion: ({}))
     }
 }

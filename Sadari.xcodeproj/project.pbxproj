@@ -54,6 +54,8 @@
 		DE72953E1A36C2CC00036812 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE72953D1A36C2CC00036812 /* UIKit.framework */; };
 		DE7295401A36C49F00036812 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE72953F1A36C49F00036812 /* IntroViewController.swift */; };
 		DE7295421A36D66400036812 /* swipe_hand.png in Resources */ = {isa = PBXBuildFile; fileRef = DE7295411A36D66400036812 /* swipe_hand.png */; };
+		DE7295451A36EB7600036812 /* MenuRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7295441A36EB7600036812 /* MenuRootViewController.swift */; };
+		DE7295471A36EC5200036812 /* MenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7295461A36EC5200036812 /* MenuNavigationController.swift */; };
 		DEBDF69E1A36ADEF00219B9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDF69D1A36ADEF00219B9D /* AppDelegate.swift */; };
 		DEBDF6A31A36ADEF00219B9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBDF6A11A36ADEF00219B9D /* Main.storyboard */; };
 		DEBDF6A51A36ADEF00219B9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBDF6A41A36ADEF00219B9D /* Images.xcassets */; };
@@ -120,6 +122,8 @@
 		DE72953D1A36C2CC00036812 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DE72953F1A36C49F00036812 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		DE7295411A36D66400036812 /* swipe_hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swipe_hand.png; sourceTree = "<group>"; };
+		DE7295441A36EB7600036812 /* MenuRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuRootViewController.swift; sourceTree = "<group>"; };
+		DE7295461A36EC5200036812 /* MenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuNavigationController.swift; sourceTree = "<group>"; };
 		DEBDF6981A36ADEF00219B9D /* Sadari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sadari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBDF69C1A36ADEF00219B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEBDF69D1A36ADEF00219B9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -265,6 +269,15 @@
 			path = Intro;
 			sourceTree = "<group>";
 		};
+		DE7295431A36EB4700036812 /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				DE7295441A36EB7600036812 /* MenuRootViewController.swift */,
+				DE7295461A36EC5200036812 /* MenuNavigationController.swift */,
+			);
+			name = MenuView;
+			sourceTree = "<group>";
+		};
 		DEBDF68F1A36ADEE00219B9D = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +351,7 @@
 		DEBDF6C11A36B90700219B9D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DE7295431A36EB4700036812 /* MenuView */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -509,6 +523,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE7295401A36C49F00036812 /* IntroViewController.swift in Sources */,
+				DE7295451A36EB7600036812 /* MenuRootViewController.swift in Sources */,
+				DE7295471A36EC5200036812 /* MenuNavigationController.swift in Sources */,
 				DEBDF69E1A36ADEF00219B9D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
