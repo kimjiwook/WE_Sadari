@@ -65,6 +65,30 @@ class IntroViewController:IFTTTAnimatedScrollViewController, IFTTTAnimatedScroll
         self.firstLabel.center = self.view.center
         self.scrollView.addSubview(firstLabel)
         
+        // (임시) 두번째 세번째
+        var secondLabel:UILabel = UILabel()
+        secondLabel.text = "샘플입니다. 꾸미는것은 나중에"
+        secondLabel.sizeToFit()
+        secondLabel.center = self.view.center
+        secondLabel.frame = CGRectOffset(secondLabel.frame, CGFloat(timeForPage(2)), 0)
+        self.scrollView.addSubview(secondLabel)
+        
+        var thirdLabel:UILabel = UILabel()
+        thirdLabel.text = "시작해 볼까요"
+        thirdLabel.sizeToFit()
+        thirdLabel.center = self.view.center
+        thirdLabel.frame = CGRectOffset(thirdLabel.frame, CGFloat(timeForPage(3)), 0)
+        self.scrollView.addSubview(thirdLabel)
+        
+        var skipButton:UIButton = UIButton()
+        skipButton.setTitle("Skip", forState: UIControlState.Normal)
+        skipButton.setTitleColor(UIColor.blueColor(), forState: UIControlState.Normal)
+        skipButton.addTarget(self, action: "skipAction", forControlEvents: UIControlEvents.TouchUpInside)
+        skipButton.sizeToFit()
+        skipButton.center = self.view.center
+        skipButton.frame = CGRectOffset(skipButton.frame, CGFloat(timeForPage(3)), 100)
+        self.scrollView.addSubview(skipButton)
+        
     }
     
     func configureAnimation() {
@@ -100,6 +124,9 @@ class IntroViewController:IFTTTAnimatedScrollViewController, IFTTTAnimatedScroll
             ])
         
         ////////////////////////////////////////////////////////////////////////////////////////////////////
-
+    }
+    
+    func skipAction(){
+        NSLog("Skip!!")
     }
 }
