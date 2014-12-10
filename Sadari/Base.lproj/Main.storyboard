@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="72" y="364"/>
+            <point key="canvasLocation" x="1748" y="-452"/>
         </scene>
         <!--Menu Root View Controller-->
         <scene sceneID="xLj-dW-ytz">
@@ -39,12 +39,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UJZ-dd-tlw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="822" y="364"/>
+            <point key="canvasLocation" x="1090" y="344"/>
         </scene>
-        <!--View Controller-->
+        <!--Calendar View Controller-->
         <scene sceneID="psH-cO-rCY">
             <objects>
-                <viewController id="W0r-7o-7bQ" sceneMemberID="viewController">
+                <viewController id="W0r-7o-7bQ" customClass="CalendarViewController" customModule="Sadari" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="47G-ib-U1R"/>
                         <viewControllerLayoutGuide type="bottom" id="aGO-NP-WbT"/>
@@ -55,17 +55,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="rpA-eN-9C3">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="35y-FC-aEi">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Vw-sg-bao">
-                                <rect key="frame" x="-23" y="-15" width="133" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Modal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" id="G23-aT-VCE"/>
-                                </connections>
-                            </button>
+                        <barButtonItem key="leftBarButtonItem" title="menu" id="Tnl-Hb-jep">
+                            <connections>
+                                <action selector="showMenu:" destination="W0r-7o-7bQ" id="rOu-pc-udh"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="modal" id="mfP-be-M0U">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="modal" id="oYc-JU-etI"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
@@ -90,6 +88,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MQm-Ny-TUF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1748" y="344"/>
+        </scene>
+        <!--Menu Table View Controller-->
+        <scene sceneID="TGP-c2-yvU">
+            <objects>
+                <tableViewController storyboardIdentifier="menuController" id="bH3-mP-IMm" customClass="MenuTableViewController" customModule="Sadari" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="VGb-uG-Ryv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="B23-Ge-h4u">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B23-Ge-h4u" id="gXr-2m-iSC">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bH3-mP-IMm" id="RnP-Af-oSD"/>
+                            <outlet property="delegate" destination="bH3-mP-IMm" id="yXe-wN-p2J"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I3k-c3-CLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="1031"/>
         </scene>
     </scenes>
 </document>

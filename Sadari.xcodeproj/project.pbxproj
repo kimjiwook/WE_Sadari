@@ -61,6 +61,8 @@
 		DEBDF6A51A36ADEF00219B9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBDF6A41A36ADEF00219B9D /* Images.xcassets */; };
 		DEBDF6A81A36ADEF00219B9D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBDF6A61A36ADEF00219B9D /* LaunchScreen.xib */; };
 		DEBDF6B41A36ADEF00219B9D /* SadariTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDF6B31A36ADEF00219B9D /* SadariTests.swift */; };
+		DEE0C0CB1A37FEAF001A08F5 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE0C0CA1A37FEAF001A08F5 /* CalendarViewController.swift */; };
+		DEE0C0CD1A3808F0001A08F5 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE0C0CC1A3808F0001A08F5 /* MenuTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +136,8 @@
 		DEBDF6B21A36ADEF00219B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEBDF6B31A36ADEF00219B9D /* SadariTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadariTests.swift; sourceTree = "<group>"; };
 		DEBDF6BD1A36B01E00219B9D /* Sadari-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sadari-Bridging-Header.h"; sourceTree = "<group>"; };
+		DEE0C0CA1A37FEAF001A08F5 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		DEE0C0CC1A3808F0001A08F5 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +278,7 @@
 			children = (
 				DE7295441A36EB7600036812 /* MenuRootViewController.swift */,
 				DE7295461A36EC5200036812 /* MenuNavigationController.swift */,
+				DEE0C0CC1A3808F0001A08F5 /* MenuTableViewController.swift */,
 			);
 			name = MenuView;
 			sourceTree = "<group>";
@@ -352,8 +357,17 @@
 			isa = PBXGroup;
 			children = (
 				DE7295431A36EB4700036812 /* MenuView */,
+				DEE0C0C91A37FE7F001A08F5 /* detailsView */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		DEE0C0C91A37FE7F001A08F5 /* detailsView */ = {
+			isa = PBXGroup;
+			children = (
+				DEE0C0CA1A37FEAF001A08F5 /* CalendarViewController.swift */,
+			);
+			name = detailsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -522,6 +536,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE0C0CB1A37FEAF001A08F5 /* CalendarViewController.swift in Sources */,
+				DEE0C0CD1A3808F0001A08F5 /* MenuTableViewController.swift in Sources */,
 				DE7295401A36C49F00036812 /* IntroViewController.swift in Sources */,
 				DE7295451A36EB7600036812 /* MenuRootViewController.swift in Sources */,
 				DE7295471A36EC5200036812 /* MenuNavigationController.swift in Sources */,

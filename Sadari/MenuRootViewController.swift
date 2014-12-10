@@ -16,6 +16,6 @@ class MenuRootViewController: REFrostedViewController {
         self.contentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("contentController") as UIViewController
         
         // 2. 메뉴 연결
-//        self.menuViewController = self.storyboard?.instantiateViewControllerWithIdentifier("menuController") as UIViewController
+        self.menuViewController = self.storyboard?.instantiateViewControllerWithIdentifier("menuController") as UIViewController
     }
 }
