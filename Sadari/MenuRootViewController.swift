@@ -17,5 +17,8 @@ class MenuRootViewController: REFrostedViewController {
         
         // 2. 메뉴 연결
         self.menuViewController = self.storyboard?.instantiateViewControllerWithIdentifier("menuController") as UIViewController
+        
+        // REST 샘플
+        REST_Players.getMonthPlayers("2014-12-01")
     }
 }
