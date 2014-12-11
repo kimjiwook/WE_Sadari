@@ -8,7 +8,7 @@
         <!--Intro View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="IntroViewController" customModule="Sadari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="introViewController" id="vXZ-lx-hvc" customClass="IntroViewController" customModule="Sadari" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -44,7 +44,7 @@
         <!--Calendar View Controller-->
         <scene sceneID="psH-cO-rCY">
             <objects>
-                <viewController id="W0r-7o-7bQ" customClass="CalendarViewController" customModule="Sadari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="calendarViewController" id="W0r-7o-7bQ" customClass="CalendarViewController" customModule="Sadari" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="47G-ib-U1R"/>
                         <viewControllerLayoutGuide type="bottom" id="aGO-NP-WbT"/>
@@ -52,7 +52,22 @@
                     <view key="view" contentMode="scaleToFill" id="6fv-2B-sZF">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pUM-DE-uVp" customClass="JTCalendarContentView">
+                                <rect key="frame" x="0.0" y="146" width="600" height="300"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KIx-vE-Ihn" customClass="JTCalendarMenuView">
+                                <rect key="frame" x="0.0" y="88" width="600" height="50"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pUM-DE-uVp" firstAttribute="top" secondItem="KIx-vE-Ihn" secondAttribute="bottom" constant="8" id="1Uz-Qz-4JS"/>
+                            <constraint firstAttribute="centerX" secondItem="KIx-vE-Ihn" secondAttribute="centerX" id="Kf8-qq-QXO"/>
+                            <constraint firstItem="KIx-vE-Ihn" firstAttribute="width" secondItem="6fv-2B-sZF" secondAttribute="width" id="TCA-B1-eCN"/>
+                            <constraint firstItem="pUM-DE-uVp" firstAttribute="width" secondItem="6fv-2B-sZF" secondAttribute="width" id="URo-wR-Hup"/>
+                            <constraint firstAttribute="centerX" secondItem="pUM-DE-uVp" secondAttribute="centerX" id="cTa-xn-FND"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rpA-eN-9C3">
                         <barButtonItem key="leftBarButtonItem" title="menu" id="Tnl-Hb-jep">
@@ -60,12 +75,16 @@
                                 <action selector="showMenu:" destination="W0r-7o-7bQ" id="rOu-pc-udh"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="modal" id="mfP-be-M0U">
+                        <barButtonItem key="rightBarButtonItem" title="today" id="mfP-be-M0U">
                             <connections>
-                                <segue destination="vXZ-lx-hvc" kind="modal" id="oYc-JU-etI"/>
+                                <action selector="selectToday:" destination="W0r-7o-7bQ" id="7P6-nX-KIx"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="calendarContentView" destination="pUM-DE-uVp" id="62e-aX-DDe"/>
+                        <outlet property="calendarMenuView" destination="KIx-vE-Ihn" id="t4Z-OC-Drq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZa-nu-tc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

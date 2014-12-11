@@ -67,9 +67,10 @@ class MenuTableViewController: UITableViewController {
         view.backgroundColor = UIColor(red: 167/255.0, green: 167/255.0, blue: 167/255.0, alpha: 0.6)
         
         var label:UILabel = UILabel(frame: CGRectMake(10, 8, 0, 0))
-        label.text = "Online"
+        label.text = "Kim J.W info"
         label.font = UIFont.systemFontOfSize(15)
-        label.textColor = UIColor.clearColor()
+        label.textColor = UIColor.whiteColor()
+        label.backgroundColor = UIColor.clearColor()
         label.sizeToFit()
         view.addSubview(label)
         
@@ -85,11 +86,34 @@ class MenuTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        if (indexPath.section == 0 && indexPath.row == 0) {
-            NSLog("첫번째")
-        } else {
-            NSLog("다른거")
+        var menuNavigationController:MenuNavigationController = self.storyboard?.instantiateViewControllerWithIdentifier("contentController") as MenuNavigationController
+        
+        if (indexPath.section == 0) {
+            if (indexPath.row == 0) {
+                NSLog("첫번째 (Home)")
+                let calendarViewController:CalendarViewController = self.storyboard?.instantiateViewControllerWithIdentifier("calendarViewController") as CalendarViewController
+                menuNavigationController.viewControllers = [calendarViewController]
+            } else if (indexPath.row == 1) {
+                NSLog("두번째 (Player)")
+            } else if (indexPath.row == 2) {
+                NSLog("세번째 (Numbers")
+            } else if (indexPath.row == 3) {
+                NSLog("네번쨰 (Money")
+            }
+        } else{
+            if (indexPath.row == 0) {
+                NSLog("Intro 페이지")
+                // Intro 일때만 팝업
+                let introViewController:IntroViewController = self.storyboard?.instantiateViewControllerWithIdentifier("introViewController") as IntroViewController
+//                menuNavigationController.viewControllers = [introViewController]
+                self.presentViewController(introViewController, animated: true, completion:nil)
+            } else {
+                NSLog("Blog 페이지")
+            }
         }
+        
+        self.frostedViewController.contentViewController = menuNavigationController
+        self.frostedViewController.hideMenuViewController()
     }
     
     ////// datasource
@@ -103,7 +127,10 @@ class MenuTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        if (section == 0) {
+            return 4
+        }
+        return 2
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -114,16 +141,14 @@ class MenuTableViewController: UITableViewController {
         if (cell == nil) {
             cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellIdentifier)
         }
-        
+        NSLog("section: \(indexPath.section),row: \(indexPath.row)")
         if (indexPath.section == 0) {
-            var titles:[String] = ["Home", "Profile", "Chats"]
+            var titles:[String] = ["Home", "Player", "Numbers", "Money"]
             cell.textLabel?.text = titles[indexPath.row]
         } else {
-            var titles:[String] = ["Hello1", "Hello2", "Hello3"]
+            var titles:[String] = ["Intro", "Blog"]
             cell.textLabel?.text = titles[indexPath.row]
         }
-        
-        NSLog("datasource")
         
         return cell
     }
