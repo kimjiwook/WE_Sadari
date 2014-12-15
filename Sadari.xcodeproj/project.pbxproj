@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3CB98BA06D626C81FD0A6644 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A17D33849BB95CE77E721D /* libPods.a */; };
+		DE194EC11A3A741E00CB06FF /* RESTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE194EC01A3A741E00CB06FF /* RESTAPI.swift */; };
+		DE194EC41A3ABA6300CB06FF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE194EC31A3ABA6300CB06FF /* Player.swift */; };
+		DE194EC61A3ABC6200CB06FF /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE194EC51A3ABC6200CB06FF /* Players.swift */; };
 		DE7294E71A36C1B800036812 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7294E41A36C1B800036812 /* GoogleOpenSource.framework */; };
 		DE7294E81A36C1B800036812 /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DE7294E51A36C1B800036812 /* GooglePlus.bundle */; };
 		DE7294E91A36C1B800036812 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7294E61A36C1B800036812 /* GooglePlus.framework */; };
@@ -80,6 +83,9 @@
 		63CDB76F4C82EBD2A0A2A405 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		85B501D6C8F7A88ED6060C15 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D9A17D33849BB95CE77E721D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE194EC01A3A741E00CB06FF /* RESTAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTAPI.swift; sourceTree = "<group>"; };
+		DE194EC31A3ABA6300CB06FF /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		DE194EC51A3ABC6200CB06FF /* Players.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
 		DE7294E41A36C1B800036812 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
 		DE7294E51A36C1B800036812 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GooglePlus.bundle; sourceTree = "<group>"; };
 		DE7294E61A36C1B800036812 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
@@ -203,6 +209,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DE194EC21A3AB9B600CB06FF /* Entites */ = {
+			isa = PBXGroup;
+			children = (
+				DE194EC31A3ABA6300CB06FF /* Player.swift */,
+				DE194EC51A3ABC6200CB06FF /* Players.swift */,
+			);
+			name = Entites;
+			sourceTree = "<group>";
+		};
 		DE7294E21A36C1B800036812 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +329,7 @@
 				DEBDF6C11A36B90700219B9D /* Views */,
 				DEBDF6A11A36ADEF00219B9D /* Main.storyboard */,
 				DEBDF6A61A36ADEF00219B9D /* LaunchScreen.xib */,
+				DE194EC21A3AB9B600CB06FF /* Entites */,
 				DEFB02811A398995005EEE12 /* REST */,
 				DEBDF69B1A36ADEF00219B9D /* Supporting Files */,
 			);
@@ -377,6 +393,7 @@
 			isa = PBXGroup;
 			children = (
 				DEFB02821A3989D5005EEE12 /* REST_Players.swift */,
+				DE194EC01A3A741E00CB06FF /* RESTAPI.swift */,
 			);
 			name = REST;
 			sourceTree = "<group>";
@@ -547,12 +564,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE194EC11A3A741E00CB06FF /* RESTAPI.swift in Sources */,
 				DEE0C0CB1A37FEAF001A08F5 /* CalendarViewController.swift in Sources */,
 				DEE0C0CD1A3808F0001A08F5 /* MenuTableViewController.swift in Sources */,
 				DE7295401A36C49F00036812 /* IntroViewController.swift in Sources */,
 				DE7295451A36EB7600036812 /* MenuRootViewController.swift in Sources */,
 				DE7295471A36EC5200036812 /* MenuNavigationController.swift in Sources */,
+				DE194EC61A3ABC6200CB06FF /* Players.swift in Sources */,
 				DEFB02831A3989D5005EEE12 /* REST_Players.swift in Sources */,
+				DE194EC41A3ABA6300CB06FF /* Player.swift in Sources */,
 				DEBDF69E1A36ADEF00219B9D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
