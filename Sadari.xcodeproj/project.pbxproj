@@ -59,6 +59,7 @@
 		DE7295421A36D66400036812 /* swipe_hand.png in Resources */ = {isa = PBXBuildFile; fileRef = DE7295411A36D66400036812 /* swipe_hand.png */; };
 		DE7295451A36EB7600036812 /* MenuRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7295441A36EB7600036812 /* MenuRootViewController.swift */; };
 		DE7295471A36EC5200036812 /* MenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7295461A36EC5200036812 /* MenuNavigationController.swift */; };
+		DE95FCE21A42658000920008 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE95FCE11A42658000920008 /* PlayersViewController.swift */; };
 		DEBDF69E1A36ADEF00219B9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDF69D1A36ADEF00219B9D /* AppDelegate.swift */; };
 		DEBDF6A31A36ADEF00219B9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEBDF6A11A36ADEF00219B9D /* Main.storyboard */; };
 		DEBDF6A51A36ADEF00219B9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEBDF6A41A36ADEF00219B9D /* Images.xcassets */; };
@@ -132,6 +133,7 @@
 		DE7295411A36D66400036812 /* swipe_hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swipe_hand.png; sourceTree = "<group>"; };
 		DE7295441A36EB7600036812 /* MenuRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuRootViewController.swift; sourceTree = "<group>"; };
 		DE7295461A36EC5200036812 /* MenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuNavigationController.swift; sourceTree = "<group>"; };
+		DE95FCE11A42658000920008 /* PlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		DEBDF6981A36ADEF00219B9D /* Sadari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sadari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEBDF69C1A36ADEF00219B9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEBDF69D1A36ADEF00219B9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -383,6 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				DEE0C0CA1A37FEAF001A08F5 /* CalendarViewController.swift */,
+				DE95FCE11A42658000920008 /* PlayersViewController.swift */,
 			);
 			name = detailsView;
 			sourceTree = "<group>";
@@ -564,6 +567,7 @@
 				DE194EC11A3A741E00CB06FF /* RESTAPI.swift in Sources */,
 				DEE0C0CB1A37FEAF001A08F5 /* CalendarViewController.swift in Sources */,
 				DEE0C0CD1A3808F0001A08F5 /* MenuTableViewController.swift in Sources */,
+				DE95FCE21A42658000920008 /* PlayersViewController.swift in Sources */,
 				DE7295401A36C49F00036812 /* IntroViewController.swift in Sources */,
 				DE7295451A36EB7600036812 /* MenuRootViewController.swift in Sources */,
 				DE7295471A36EC5200036812 /* MenuNavigationController.swift in Sources */,

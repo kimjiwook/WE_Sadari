@@ -95,6 +95,8 @@ class MenuTableViewController: UITableViewController {
                 menuNavigationController.viewControllers = [calendarViewController]
             } else if (indexPath.row == 1) {
                 NSLog("두번째 (Player)")
+                let playersViewController:PlayersViewController = self.storyboard?.instantiateViewControllerWithIdentifier("playersViewController") as PlayersViewController
+                menuNavigationController.viewControllers = [playersViewController]
             } else if (indexPath.row == 2) {
                 NSLog("세번째 (Numbers")
             } else if (indexPath.row == 3) {

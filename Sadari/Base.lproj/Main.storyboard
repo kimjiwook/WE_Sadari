@@ -90,6 +90,31 @@
             </objects>
             <point key="canvasLocation" x="2448" y="344"/>
         </scene>
+        <!--Players View Controller-->
+        <scene sceneID="mkT-S0-ewK">
+            <objects>
+                <viewController storyboardIdentifier="playersViewController" id="ezl-X5-iFt" customClass="PlayersViewController" customModule="Sadari" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rX1-pg-Mv3"/>
+                        <viewControllerLayoutGuide type="bottom" id="l6h-bL-XTl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="icX-cC-dQj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lXe-zS-Hj5">
+                        <barButtonItem key="leftBarButtonItem" title="menu" id="czk-8E-dch">
+                            <connections>
+                                <action selector="showMenu:" destination="ezl-X5-iFt" id="RRP-pl-Wdv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S1U-P1-1xu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2448" y="1031"/>
+        </scene>
         <!--Menu Navigation Controller-->
         <scene sceneID="fph-6w-Qir">
             <objects>
@@ -102,6 +127,7 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="W0r-7o-7bQ" kind="relationship" relationship="rootViewController" id="QNB-LY-V9K"/>
+                        <segue destination="ezl-X5-iFt" kind="push" id="80t-Mi-yRz"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MQm-Ny-TUF" userLabel="First Responder" sceneMemberID="firstResponder"/>
